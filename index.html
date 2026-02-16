@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amal Shaiju | Speed-Focused Software Consultant</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#258cf4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                        "primary-dark": "#1a6fc0",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .glass-card {
+            background: rgba(16, 25, 34, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 140, 244, 0.1);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 20px rgba(37, 140, 244, 0.5);
+        }
+
+        .glow-border {
+            box-shadow: 0 0 15px rgba(37, 140, 244, 0.3);
+        }
+
+        .speed-line {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #258cf4, transparent);
+            opacity: 0.3;
+            width: 100%;
+        }
+
+        .custom-logo {
+            width: 28px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .logo-divider {
+            width: 1px;
+            height: 24px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-display antialiased selection:bg-primary selection:text-white">
+
+    <body
+        class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-display antialiased selection:bg-primary selection:text-white">
+        <nav
+            class="fixed w-full z-50 top-0 border-b border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/logo.svg" alt="Logo" class="w-10 h-10" />
+                            <div class="logo-divider"></div>
+                            <div class="flex flex-col">
+                                <span class="font-bold uppercase text-xl tracking-tight">Work With Amal</span>
+                                <span class="text-[10px] uppercase tracking-[0.2em] text-primary font-bold">Custom
+                                    Software</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-sm font-medium"
+                            href="#process">Process</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors text-sm font-medium"
+                            href="#tech">Tech Stack</a>
+                        <a class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-lg text-sm font-medium transition-all shadow-lg shadow-primary/25"
+                            href="https://calendly.com/amalshaiju16/discovery-call-workwithamal-ca">
+                            Book Free Call
+                        </a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-gray-300 hover:text-white">
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20 bg-[size:40px_40px] bg-grid-pattern pointer-events-none"></div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
+                <div class="absolute top-[20%] left-[10%] w-72 h-72 bg-primary/20 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-[20%] right-[10%] w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+            </div>
+            <div
+                class="absolute top-[15%] left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent transform -skew-y-3">
+            </div>
+            <div
+                class="absolute top-[85%] left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent transform skew-y-3">
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-6 animate-fade-in-up">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Now Accepting Projects
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white mb-6 leading-[1.1]">
+                    From Idea to Production in <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-300 glow-text">Weeks</span>,
+                    Not Months.
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 mb-10">
+                    Professional-grade custom software for businesses that can't afford to wait. Skip the agency bloat
+                    and
+                    ship faster with a dedicated expert.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-primary rounded-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-gray-900 glow-border"
+                        href="https://calendly.com/amalshaiju16/discovery-call-workwithamal-ca">
+                        Book Your Free Call
+                        <span
+                            class="material-icons ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        <div class="absolute inset-0 rounded-lg ring-2 ring-white/20 group-hover:ring-white/40"></div>
+                    </a>
+                    <a class="text-gray-300 hover:text-white px-6 py-4 font-medium transition-colors flex items-center gap-2"
+                        href="#process">
+                        See the timeline <span class="material-icons text-sm">expand_more</span>
+                    </a>
+                </div>
+                <div
+                    class="mt-16 pt-8 border-t border-gray-800 flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <span class="material-icons text-2xl">code</span>
+                        <span class="font-bold">.NET Core</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <span class="material-icons text-2xl">data_object</span>
+                        <span class="font-bold">React</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <span class="material-icons text-2xl">cloud</span>
+                        <span class="font-bold">AWS</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-gray-400">
+                        <span class="material-icons text-2xl">storage</span>
+                        <span class="font-bold">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-background-dark relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">The "Small Fish" Problem</h2>
+                        <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                            Mid-sized companies often get stuck in the backlog of large agencies. Your project sits idle
+                            while they chase bigger accounts. You pay for their overhead, their account managers, and
+                            their
+                            slow communication.
+                        </p>
+                        <p class="text-white font-medium text-lg border-l-4 border-primary pl-4 mb-8">
+                            Why wait for weekly syncs when you can have daily progress?
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="material-icons text-red-500 mt-1">close</span>
+                                <span class="text-gray-400">No account managers playing "telephone"</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-icons text-red-500 mt-1">close</span>
+                                <span class="text-gray-400">No offshore teams working while you sleep</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-icons text-red-500 mt-1">close</span>
+                                <span class="text-gray-400">No bloated timelines to justify retainers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute top-0 right-0 w-full md:w-[90%] bg-gray-900 border border-gray-800 rounded-xl p-6 transform translate-x-4 -translate-y-4 opacity-50 scale-95 z-0">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="font-bold text-gray-500">Typical Agency</h3>
+                                <span class="text-xs font-mono text-gray-600">SLOW</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="h-2 bg-gray-800 rounded w-3/4"></div>
+                                <div class="h-2 bg-gray-800 rounded w-1/2"></div>
+                                <div class="mt-4 flex gap-2">
+                                    <div class="w-8 h-8 rounded-full bg-gray-800"></div>
+                                    <div class="w-8 h-8 rounded-full bg-gray-800"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative bg-gray-900/80 backdrop-blur-xl border border-primary/50 rounded-xl p-8 shadow-2xl shadow-primary/10 z-10">
+                            <div
+                                class="absolute -top-3 -right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                                FAST TRACK
+                            </div>
+                            <div class="flex items-center gap-4 mb-6">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                                    <span class="material-icons">rocket_launch</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-white">Amal Shaiju</h3>
+                                    <p class="text-primary text-sm font-mono">Dedicated Consultant</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-400">Communication</span>
+                                    <span class="text-white font-medium">Direct &amp; Instant</span>
+                                </div>
+                                <div class="w-full bg-gray-800 rounded-full h-1.5">
+                                    <div class="bg-primary h-1.5 rounded-full" style="width: 100%"></div>
+                                </div>
+                                <div class="flex justify-between text-sm mt-2">
+                                    <span class="text-gray-400">Time to MVP</span>
+                                    <span class="text-white font-medium">4-8 Weeks</span>
+                                </div>
+                                <div class="w-full bg-gray-800 rounded-full h-1.5">
+                                    <div class="bg-primary h-1.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-background-light dark:bg-background-dark relative overflow-hidden" id="tech">
+            <div class="absolute inset-0 bg-primary/5 clip-path-slant"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    Built for Speed. <br /><span class="text-primary">Engineered for Scale.</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-16">
+                    I don't experiment with your budget. I use the gold standard enterprise stack to ensure reliability,
+                    security, and raw performance.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div
+                        class="group bg-gray-900 border border-gray-800 hover:border-primary/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                            <span
+                                class="material-icons text-4xl text-gray-300 group-hover:text-primary transition-colors">memory</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">.NET Core Backend</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            High-performance, cross-platform server-side code. Secure by default and capable of handling
+                            millions of requests.
+                        </p>
+                    </div>
+                    <div
+                        class="group bg-gray-900 border border-gray-800 hover:border-primary/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                        <div
+                            class="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                            <span
+                                class="material-icons text-4xl text-gray-300 group-hover:text-primary transition-colors">widgets</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">React Frontend</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Snappy, interactive user interfaces. Component-based architecture allows for rapid iteration
+                            and
+                            a modern feel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-background-dark border-t border-gray-800" id="process">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12">
+                    <span class="text-primary font-bold tracking-wider uppercase text-sm">The Process</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">4-8 Weeks to Launch</h2>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-[3.2rem] left-0 w-full h-0.5 bg-gray-800 hidden md:block"></div>
+                    <div class="flex flex-col md:flex-row gap-8 md:gap-0 overflow-x-auto no-scrollbar pb-8 snap-x">
+                        <div class="flex-none w-full md:w-1/4 snap-start relative group">
+                            <div class="md:pr-8 relative z-10">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gray-900 border-2 border-primary text-primary flex items-center justify-center font-bold text-lg mb-6 shadow-[0_0_15px_rgba(37,140,244,0.3)] mx-auto md:mx-0">
+                                    1
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2 text-center md:text-left">Discovery &amp;
+                                    Plan
+                                </h3>
+                                <p class="text-sm text-gray-400 text-center md:text-left">Deep dive into requirements.
+                                    We
+                                    define the MVP scope to ensure we build exactly what you need, nothing more.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Scope</span>
+                                    <span
+                                        class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-none w-full md:w-1/4 snap-start relative group">
+                            <div class="md:pr-8 relative z-10">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gray-900 border-2 border-gray-700 group-hover:border-primary text-gray-400 group-hover:text-primary flex items-center justify-center font-bold text-lg mb-6 transition-colors mx-auto md:mx-0">
+                                    2
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2 text-center md:text-left">Core Dev</h3>
+                                <p class="text-sm text-gray-400 text-center md:text-left">Rapid development sprints. I
+                                    build
+                                    the core functionality first so you can start testing immediately.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Sprint 1</span>
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">API Build</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-none w-full md:w-1/4 snap-start relative group">
+                            <div class="md:pr-8 relative z-10">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gray-900 border-2 border-gray-700 group-hover:border-primary text-gray-400 group-hover:text-primary flex items-center justify-center font-bold text-lg mb-6 transition-colors mx-auto md:mx-0">
+                                    4
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2 text-center md:text-left">Iteration &amp;
+                                    UI
+                                </h3>
+                                <p class="text-sm text-gray-400 text-center md:text-left">Polishing the user interface
+                                    and
+                                    refining features based on your feedback. The app comes to life.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Frontend</span>
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Feedback
+                                        Loop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-none w-full md:w-1/4 snap-start relative group">
+                            <div class="relative z-10">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg mb-6 shadow-[0_0_20px_rgba(37,140,244,0.6)] mx-auto md:mx-0">
+                                    8
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-2 text-center md:text-left">Live Deployment
+                                </h3>
+                                <p class="text-sm text-gray-400 text-center md:text-left">Launch day. Secure deployment
+                                    to
+                                    production environment. Handover of documentation and code.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-center md:justify-start">
+                                    <span
+                                        class="text-xs bg-primary/20 text-primary border border-primary/30 px-2 py-1 rounded">Launch</span>
+                                    <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-gray-900 relative border-t border-gray-800 overflow-hidden">
+            <div
+                class="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent pointer-events-none">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <div class="w-full lg:w-1/2 relative order-2 lg:order-1">
+                        <div class="relative rounded-2xl overflow-hidden border border-gray-700 shadow-2xl group">
+                            <div class="aspect-[4/5] bg-gray-800 relative overflow-hidden">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80 z-10">
+                                </div>
+                                <img alt="Amal Shaiju Professional Portrait"
+                                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 opacity-90 grayscale group-hover:grayscale-0"
+                                    src="assets/amal-shaiju-professional-headshot.png" />
+                                <div class="absolute bottom-6 left-6 right-6 z-20">
+                                    <div
+                                        class="bg-gray-900/90 backdrop-blur-md p-4 rounded-xl border border-gray-700/50">
+                                        <div class="flex items-center gap-3 mb-1">
+                                            <p class="text-white font-bold text-lg">Amal Shaiju</p>
+                                            <a class="text-gray-400 hover:text-primary transition-colors flex items-center justify-center bg-gray-800/50 p-1 rounded-md border border-gray-700 hover:border-primary/30"
+                                                href="https://www.linkedin.com/in/amalshaiju/">
+                                                <i class="fab fa-linkedin text-sm"></i>
+                                            </a>
+                                        </div>
+                                        <p class="text-primary text-sm font-mono">Software Architect</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -top-6 -left-6 w-24 h-24 border-t-2 border-l-2 border-primary/30 rounded-tl-3xl hidden lg:block">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -right-6 w-24 h-24 border-b-2 border-r-2 border-primary/30 rounded-br-3xl hidden lg:block">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">Personal
+                            Connection</span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                            The Person <br />
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Behind
+                                the
+                                Code</span>
+                        </h2>
+                        <div class="space-y-6 text-lg text-gray-400 leading-relaxed">
+                            <p class="text-white font-medium">I don’t just write code; I build business solutions.</p>
+                            <p>
+                                After managing complex data systems for a $28 billion company like GFL Environmental,
+                                I’ve
+                                mastered the art of balancing enterprise-grade quality with the speed of a startup.
+                            </p>
+                            <p>
+                                When you work with me, you aren’t hiring a remote freelancer—you’re gaining a dedicated
+                                partner who understands that software is an investment that must deliver a ROI.
+                            </p>
+                        </div>
+                        <div class="mt-10">
+                            <h3 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                                <span class="material-icons text-primary text-xl">verified</span>
+                                Personal Values
+                            </h3>
+                            <div class="grid gap-3">
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded-lg bg-gray-800/40 border border-gray-800 hover:border-primary/30 transition-colors group">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(37,140,244,0.8)] mt-2.5 shrink-0"></span>
+                                    <div class="text-gray-300">
+                                        <span class="font-bold text-white block mb-1">Extreme Ownership</span>
+                                        <span class="text-sm text-gray-400">I manage the project from architecture to
+                                            deployment so you don’t have to.</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded-lg bg-gray-800/40 border border-gray-800 hover:border-primary/30 transition-colors group">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(37,140,244,0.8)] mt-2.5 shrink-0"></span>
+                                    <div class="text-gray-300">
+                                        <span class="font-bold text-white block mb-1">Enterprise Standards</span>
+                                        <span class="text-sm text-gray-400">Battle-tested .NET and React architecture
+                                            for
+                                            maximum reliability.</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-start gap-3 p-3 rounded-lg bg-gray-800/40 border border-gray-800 hover:border-primary/30 transition-colors group">
+                                    <span
+                                        class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(37,140,244,0.8)] mt-2.5 shrink-0"></span>
+                                    <div class="text-gray-300">
+                                        <span class="font-bold text-white block mb-1">Direct Access</span>
+                                        <span class="text-sm text-gray-400">No middleman. You have my personal number
+                                            and
+                                            direct line for any questions.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="py-24 bg-gray-900 overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 relative">
+                        <div
+                            class="aspect-video w-full bg-[#0a111a] rounded-xl border border-gray-700 overflow-hidden relative shadow-2xl group">
+                            <img alt="Map of Ontario" class="w-full h-full object-cover opacity-80 mix-blend-overlay"
+                                data-alt="Dark stylized map of Ontario with digital network connections"
+                                data-location="Ontario"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuX2zEBlLtsvVogjmWdnnkGZlkkFzHeDiHOjuHyfyLRVTPUIsAMFKwzlcPHmQ8TNwvwb6P7eV1RBFEVPvUTo2c1iYVVmxdVbte2ghUDGBn83_pYZSB1Vjz6EB69K7N7Pi9bwjljVbUpJFznQQbuw0VvT03CD2yPStlwn5lsVUpOcra9tzCTdoxxAOKNjqyvPQsafbTzUezDpsOEOCz8PoPy9pnNTnYIn5--SRl_cCmYQO8hxEXAYAyc6vtrnv4qRcVgoQuaULaOGM" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-[#0a111a]/50 to-transparent">
+                            </div>
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-color-dodge pointer-events-none"></div>
+                            <div
+                                class="absolute top-[40%] left-[45%] transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                                <div class="relative flex items-center justify-center">
+                                    <span
+                                        class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-primary opacity-30 duration-1000"></span>
+                                    <span
+                                        class="animate-ping absolute inline-flex h-12 w-12 rounded-full bg-primary opacity-50 delay-150 duration-1000"></span>
+                                    <span
+                                        class="relative inline-flex rounded-full h-5 w-5 bg-primary border-[3px] border-white shadow-[0_0_20px_rgba(37,140,244,0.8)]"></span>
+                                </div>
+                                <div
+                                    class="absolute top-8 left-1/2 -translate-x-1/2 mt-4 bg-gray-900/95 backdrop-blur-md px-4 py-2 rounded-lg text-sm text-center border border-primary/40 shadow-[0_0_30px_rgba(0,0,0,0.5)] whitespace-nowrap z-50 transition-transform duration-300 hover:scale-105 cursor-default group-hover:border-primary/70">
+                                    <div class="flex items-center gap-2 mb-1 justify-center">
+                                        <span class="material-icons text-primary text-base">location_on</span>
+                                        <span class="text-white font-bold tracking-wide">Ontario, Canada</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 justify-center text-xs">
+                                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                        <span class="text-gray-300 font-mono">EST Timezone (UTC-5)</span>
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-gray-900 border-t border-l border-primary/40 rotate-45 transform">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                            Local Advantage. <br />
+                            <span class="text-primary">Real Human Interaction.</span>
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">
+                            Stop dealing with 12-hour time differences and language barriers. I'm based in Ontario,
+                            working
+                            on your schedule.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex items-center gap-4 p-4 rounded-lg bg-gray-800/50 border border-gray-800">
+                                <span class="material-icons text-primary text-2xl">schedule</span>
+                                <div>
+                                    <h4 class="font-bold text-white">EST Timezone</h4>
+                                    <p class="text-xs text-gray-400">Synchronized work hours</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 rounded-lg bg-gray-800/50 border border-gray-800">
+                                <span class="material-icons text-primary text-2xl">gavel</span>
+                                <div>
+                                    <h4 class="font-bold text-white">Canadian Contracts</h4>
+                                    <p class="text-xs text-gray-400">Simple legal framework</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 relative overflow-hidden" id="contact">
+            <div class="absolute inset-0 bg-primary/10"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-background-dark to-transparent"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-8 tracking-tight">
+                    Ready to Ship? <br />Let's Talk.
+                </h2>
+                <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    No sales teams. No fluff. Just a direct conversation about your project and how fast we can get it
+                    live.
+                </p>
+                <a href="https://calendly.com/amalshaiju16/discovery-call-workwithamal-ca"
+                    class="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-200 bg-primary rounded-lg hover:bg-primary-dark hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary shadow-[0_0_30px_rgba(37,140,244,0.4)]">
+                    Book Your Free Call
+                    <span class="material-icons ml-2">calendar_month</span>
+                </a>
+            </div>
+        </section>
+        <footer class="bg-background-dark border-t border-gray-800 py-12">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <div class="flex-shrink-0 flex items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <img src="assets/logo.svg" alt="Logo" class="w-10 h-10" />
+                            <div class="logo-divider"></div>
+                            <div class="flex flex-col">
+                                <span class="font-bold uppercase text-xl tracking-tight">Work With Amal</span>
+                                <span class="text-[10px] uppercase tracking-[0.2em] text-primary font-bold">Custom
+                                    Software</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-sm text-gray-600">
+                    © 2026 Amal Shaiju. Ontario, Canada.
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
